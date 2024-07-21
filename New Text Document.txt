@@ -1,0 +1,4 @@
+task 19/7
+1 valditan on password and email 
+  >> include index ..
+2 add "cart" to navbar that take from ADD

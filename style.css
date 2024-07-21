@@ -1,0 +1,242 @@
+
+:root {
+    --main-color: #E7D9EA;
+    --two-color:#11698E;
+    --three-color:#19456B;
+    --four-color:#16C79A;
+}  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    z-index: 100;
+    position: sticky;
+    background-color:var(--three-color);
+    top: 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.331);
+}
+
+nav ul {
+    display: flex;
+align-items: center;
+}
+nav ul li a:hover{
+    color: var(--four-color);
+
+}
+.active{
+    display: none;
+}
+nav ul li{
+    margin: 0px 10px;
+}
+nav input{
+    width: 300px;
+    padding:5px ;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.3s;
+}
+nav  button{
+    padding: 4px;
+    border-radius: 10px;
+    background-color: var(--four-color);
+    transition: 0.3s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav ,.search input:focus{
+    background-color: rgba(245, 222, 179, 0.897);
+}
+nav button:hover{
+    background-color: var(--main-color);
+    color: var(--three-color);
+}
+
+nav li {
+    display: flex;
+    margin: auto;
+}
+nav li ul{
+    padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.3s;
+}
+
+
+
+
+#root{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 10px;
+    margin: 10px 5px;
+    background-color: #eee;
+    border-radius:20px ;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.302);
+}
+.card:hover{
+    transition: 0.3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.602);
+    background-color: var(--main-color);
+}
+
+.card img{
+    border-radius: 10px;
+    filter: grayscale(80%);
+}
+.card:hover img{
+    transition: 0.3s;
+    filter: grayscale(0%);
+}
+.card h1{
+    margin: 8px 0;
+    font-family: sans-serif;
+    font-size: 28px;
+    color: var(--two-color);
+}
+.card p{
+    font-weight: bold;
+    color: var(--three-color);
+}
+    .card .price{
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+    }
+    .card .price h4{
+        padding:  10px ;
+        color:rgb(67, 89, 89); ;
+        font-size: 18px;
+        border: 1px solid rgb(139, 152, 152);
+        border-radius: 35px;
+        background-color: rgb(201, 218, 218);;
+    }
+    .card button{
+        background-color: rgba(255, 255, 0, 0.262);
+        border-radius: 20px;
+        padding: 15px 10px;
+        cursor: pointer;
+        border:none;
+        font-weight: bold;
+        }
+    .card button:hover{
+        transition: 0.5s;
+        background-color: rgb(255, 183, 0);
+    }    
+/* FORM sign in */
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin:60px auto;
+    padding: 20px 50px;
+    background-color: bisque;
+    color: var(--three-color);
+    border: 1px solid ;
+    border-radius: 20px;
+    text-align: center;
+
+}
+.form h1{
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.form input{
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+
+}
+.form button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: var(--three-color);
+    background-color: var(--four-color);
+    transition: 0.3s;
+}
+button:hover{
+    background-color: var(--main-color);
+    color: var(--three-color);
+}
+.form p a{
+    font-weight: bold;
+    color:var(--two-color);
+    transition: 0.3s;
+}
+.form p a:hover{
+    color: var(--four-color);
+}
+
+/* end form */
+/* add */
+.add{
+    color: var(--four-color);
+    display: flex;
+    flex-direction: column;
+    background-color:var(--main-color);
+    padding:20px ;
+    text-align: center;
+    margin: 100px;
+  }
+  .add input{
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0 50px;
+    padding:15px 5px;
+    width: 300px;
+  }
+  .add button{
+    background-color: var(--four-color);
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border:none;
+    font-weight: bold;
+  }
+/* cart */
+.cart{
+    color: var(--two-color);
+    display: flex;
+    background-color:var(--main-color);
+    margin: 50px;
+    width: 600px;
+    padding: 40px;
+   
+  }
+  .image{
+    align-self: center;
+    padding: 20px;
+    height:200px;
+    
+  }
+   .image img{
+    height:200px;
+  }
+ h1{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+}
